@@ -122,23 +122,6 @@
 // Navigation links
 .nav-item {
     display: block;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(-100px);
-    transition: $transition-secondary;
-}
-.main-nav.opened .nav-item {
-    opacity: 1;
-    transform: translateX(0);
-    transition: $transition-secondary;
-    visibility: visible;
-
-    // Menu opening - Cascade animation effect
-    @for $i from 1 through 15 {
-        &:nth-of-type(#{$i}) {
-            transition-delay: (0.05s * ($i - 1) + 0.1s);
-        }
-    }
 }
 
 .nav-link {
