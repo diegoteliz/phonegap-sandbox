@@ -34,6 +34,7 @@ define([
 
         settings: function() {
             $('.the-title').html('Settings');
+            alert('Testing alert Box');
         }
 
     });
