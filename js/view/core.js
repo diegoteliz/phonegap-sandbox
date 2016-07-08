@@ -1,9 +1,8 @@
 define([
     'jquery',
     'underscore',
-    'backbone',
-    'view/categories'
-], function($, _, Backbone, CategoriesView) {
+    'backbone'
+], function($, _, Backbone) {
 
     'use strict';
 
@@ -63,8 +62,6 @@ define([
 
         render: function() {
             // Show List of Categories
-            var categoriesView = new CategoriesView();
-
             console.log('render -> CoreView');
         },
 
